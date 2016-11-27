@@ -1,0 +1,1 @@
+# kibana-percentage-plugin
