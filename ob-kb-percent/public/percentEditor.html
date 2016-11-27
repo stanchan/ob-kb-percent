@@ -2,7 +2,7 @@
   <label>Number Format</label>
   <input type="text" ng-model="vis.params.format" class="form-control">
 
-  <label>Number Font Size - {{ vis.params.fontSize }}pt</label>
+  <label>Number Font Size - {{vis.params.ratioFontSize}}pt</label>
   <input type="range" ng-model="vis.params.ratioFontSize" class="form-control" min="12" max="120" />
 
   <label>Label</label>
@@ -16,7 +16,7 @@
       <option value="right">Right</option>
     </select>
 
-  <label>Label Font Size - {{ vis.params.fontSize }}pt</label>
+  <label>Label Font Size - {{vis.params.labelFontSize}}pt</label>
   <input type="range" ng-model="vis.params.labelFontSize" class="form-control" min="12" max="120" />
   
   <hr>
