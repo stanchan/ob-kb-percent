@@ -5,7 +5,7 @@ Developed for kibana 4.
 Based on [Tim Roes]'s awesome blog + examples.
 
 ### Installation
-Copy the content of this folder to the /installedPluging/ob-kb-percent under the kibana installation directory.
+Copy the content of this folder to the /installedPlugins/ob-kb-percent under the kibana installation directory.
 
 ### Usage
 Once installed, you'll see an additional type of visualization, named "Percent View"
