@@ -5,12 +5,12 @@
 	width: 100%;
   	flex-direction: row;
   	align-content: space-around;
+  	align-items: center;
 }
 
 .percentview_wrapper {
 	display: flex;
 	text-align: center;
-	align-items: center;
 	align-content: center;
 }
 
