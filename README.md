@@ -4,6 +4,9 @@ Kibana Visualization plugin for displaying a single ratio (percent) metric. Cust
 Developed for kibana 4.
 Based on [Tim Roes]'s awesome blog + examples.
 
+### Example
+![example image](https://raw.githubusercontent.com/outbrain/ob-kb-percent/master/docs/image1.png)
+
 ### Installation
 Copy the content of this folder to the /installedPlugins/ob-kb-percent under the kibana installation directory.
 
