@@ -9,7 +9,13 @@ Based on [Tim Roes]'s awesome blog + examples.
 
 ### Installation
 Copy the content of this folder to the /installedPlugins/ob-kb-percent under the kibana installation directory.
-
+#### Via Chef
+```
+git '/opt/kibana/installedPlugins/ob-kb-percent' do
+  repository 'https://github.com/outbrain/ob-kb-percent.git'
+  revision 'master'
+end
+```
 ### Usage
 Once installed, you'll see an additional type of visualization, named "Percent View"
 By default, no aggregations are added. Total hits are used for numerator and denominator, so the result is "Percent : 100.000%". 
