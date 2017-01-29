@@ -8,7 +8,8 @@ Based on [Tim Roes]'s awesome blog + examples.
 ![example image](https://raw.githubusercontent.com/outbrain/ob-kb-percent/master/docs/image1.png)
 
 ### Installation
-Copy the content of this folder to the /installedPlugins/ob-kb-percent under the kibana installation directory.
+#### Via Kibana CLI
+`kibana plugin -i ob-kb-percent -u https://github.com/outbrain/ob-kb-percent/archive/master.zip`
 #### Via Chef
 ```
 git '/opt/kibana/installedPlugins/ob-kb-percent' do
