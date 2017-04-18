@@ -9,11 +9,11 @@ Based on [Tim Roes]'s awesome blog + examples.
 
 ### Installation
 #### Via Kibana CLI
-`kibana plugin -i ob-kb-percent -u https://github.com/outbrain/ob-kb-percent/archive/master.zip`
+`kibana plugin -i ob-kb-percent -u https://github.com/stanchan/ob-kb-percent/archive/master.zip`
 #### Via Chef
 ```
 git '/opt/kibana/installedPlugins/ob-kb-percent' do
-  repository 'https://github.com/outbrain/ob-kb-percent.git'
+  repository 'https://github.com/stanchan/ob-kb-percent.git'
   revision 'master'
 end
 ```
