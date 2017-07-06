@@ -1,8 +1,8 @@
 {
 	"name": "ob-kb-percent",
-	"version": "5.4.0",
+	"version": "5.4.2",
 	"kibana": {
-		"version": "5.4.0"
+		"version": "5.4.2"
 	},
 	"devDependencies" : {
 		"numeral": "^1.5.3"
