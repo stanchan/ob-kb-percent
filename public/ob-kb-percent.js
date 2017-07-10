@@ -39,25 +39,25 @@ function PercentProvider(Private) {
 		params: {
 			editor: require('plugins/ob-kb-percent/percentEditor.html'),
 			defaults: {
-      			format: '0.000%',
-      			ratioFontSize: 60,
+				format: '0.000%',
+				ratioFontSize: 60,
 
-      			label: 'Percent :',
-      			labelFontSize: 40,
-      			labelPlacement: 'top',
-			displayIncrement: false,
-      			numeratorType : 'total',
-      			numerator : {
-      				nthBucket : 1,
-      				namedBucket : ''
-      			},
+				label: 'Percent :',
+				labelFontSize: 40,
+				labelPlacement: 'top',
+				displayIncrement: false,
+				numeratorType : 'total',
+				numerator : {
+					nthBucket : 1,
+					namedBucket : ''
+				},
 
-      			denominatorType : 'total',
-      			denominator : {
-      				nthBucket : 1,
-      				namedBucket : ''
-      			}
-    		}
+				denominatorType : 'total',
+				denominator : {
+					nthBucket : 1,
+					namedBucket : ''
+				}
+			}
 		}
 	});
 }
