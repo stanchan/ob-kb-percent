@@ -17,22 +17,26 @@
     </select>
 
   <label>Label Font Size - {{vis.params.labelFontSize}}pt</label>
-  <input type="range" ng-model="vis.params.labelFontSize" class="form-control" min="12" max="120" />	
-	
+  <input type="range" ng-model="vis.params.labelFontSize" class="form-control" min="12" max="120" />  
+  
   <hr>
- 
+
   <div class="form-group">
-    <label>Display percentage increment</label>
-    <input type="checkbox" ng-model="vis.params.displayIncrement" class="form-control" id="placement" class="form-control"/>
+    <label class="control-label" for="displayType">Display Options : </label>
+    <select ng-model="vis.params.displayType" id="displayType" class="form-control">
+      <option value="none">None</option>
+      <option value="increment">Percentage increment</option>
+      <option value="invert">Percentage invert</option>
+    </select>
   </div>
 
   <div class="form-inline form-group">
-	  <label class="control-label" for="numeratorType">Numerator : </label>
-	  <select ng-model="vis.params.numeratorType" id="numeratorType" class="form-control">
-	    <option value="total">Total hits</option>
-	    <option value="nthBucket">Nth Bucket</option>
-	    <option value="namedBucket">Named Bucket</option>
-	  </select>
+    <label class="control-label" for="numeratorType">Numerator : </label>
+    <select ng-model="vis.params.numeratorType" id="numeratorType" class="form-control">
+      <option value="total">Total hits</option>
+      <option value="nthBucket">Nth Bucket</option>
+      <option value="namedBucket">Named Bucket</option>
+    </select>
   </div>
 
   <div ng-show="vis.params.numeratorType == 'namedBucket'" class="form-inline form-group">
@@ -48,21 +52,21 @@
   <hr>
 
   <div class="form-inline form-group">
-	  <label class="control-label" for="denominator">Denominator</label>
-	  <select ng-model="vis.params.denominatorType" name="denominator" class="form-control">
-	    <option value="total">Total hits</option>
-	    <option value="nthBucket">Nth Bucket</option>
-	    <option value="namedBucket">Named Bucket</option>
-	  </select>
+    <label class="control-label" for="denominator">Denominator</label>
+    <select ng-model="vis.params.denominatorType" name="denominator" class="form-control">
+      <option value="total">Total hits</option>
+      <option value="nthBucket">Nth Bucket</option>
+      <option value="namedBucket">Named Bucket</option>
+    </select>
   </div>
 
   <div ng-show="vis.params.denominatorType == 'namedBucket'" class="form-inline form-group">
-    <label class="control-label" for="denominator.namedBucket">Numerator Bucket Name</label>
+    <label class="control-label" for="denominator.namedBucket">Denominator Bucket Name</label>
     <input type="text" ng-model="vis.params.denominator.namedBucket" name="denominator.namedBucket" class="form-control">
   </div>
 
   <div ng-show="vis.params.denominatorType == 'nthBucket'" class="form-inline form-group">
-    <label class="control-label" for="denominator.nthBucket">Numerator Bucket</label>
+    <label class="control-label" for="denominator.nthBucket">Denominator Bucket</label>
     <input type="number" ng-model="vis.params.denominator.nthBucket" name="denominator.nthBucket" class="form-control">
   </div>
 
