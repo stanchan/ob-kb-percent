@@ -62,4 +62,5 @@ function PercentProvider(Private) {
 	});
 }
 
-require('ui/registry/vis_types').register(PercentProvider);
+import { VisTypesRegistryProvider } from 'ui/registry/vis_types';
+VisTypesRegistryProvider.register(PercentProvider);
